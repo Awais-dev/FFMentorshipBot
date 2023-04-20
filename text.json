@@ -1,3 +1,8 @@
 {
-    "welcomeText": "Hello, thank you for your interest in ForexFunded!\n\nTo better assist you, please select from the following.\n\n1. Mentorship\n2. Free access to mentorship\n3. Prop Firm Passing"
+    "welcomeText": "Hello, thank you for your interest in ForexFunded!\n\nTo better assist you, please select from the following options.",
+    "mentorshipText": "VIP Membership includes:\n\n⚡️Live Trading\n⚡️Daily Morning Briefing\n⚡️GOLD, US30 and FX\n⚡️Access to three mentor analysis rooms\n⚡️Daily Technical Analysis\n⚡️Z strategy access\n⚡️Access to team trading chat\nand many more…\n\nPlease select one from the following options:",
+    "propFirmText": "Hi, we pass challenges on all firms.\nOn average it takes us 10-15 days per phase.\nWe do not guarantee that we pass in that timeframe, but if we fail to pass, we pass any future challenges for free.\n\nWe Charge $425 for accounts 50k or lower & $750 for accounts 100k and above.\nThe payment can be sent via Apple Pay, Cash app, Zelle, Bitcoin or Card Payment\n\nYou purchase the prop account & send the passing fee, then send the MT log in and server details.\n\nI ask you to never log in unless it’s via investor password. Which some firms don’t provide. If that is the case, you monitor via Website Dashboard :)",
+    "monthlyText": "Monthly",
+    "lifetimeText": "Lifetime",
+    "freeAccessText": "Broker access:"
 }

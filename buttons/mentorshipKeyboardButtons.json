@@ -1,15 +1,22 @@
 {
-    "keyboard": [
+    "inline_keyboard": [
         [
-            "Monthly"
+            {
+                "text": "Monthly - $125",
+                "url": "https://forexfunded.gumroad.com/l/JOINFF"
+            }
         ],
         [
-            "Lifetime"
+            {
+                "text": "Lifetime - $600",
+                "url": "https://forexfunded.gumroad.com/l/aitfx"
+            }
         ],
         [
-            "FREE ACCESS"
+            {
+                "text": "FREE ACCESS (4XC)",
+                "url": "https://live.4xc.com/signup/z5ZEURnl"
+            }
         ]
-    ],
-    "is_persistant": true,
-    "one_time_keyboard": true
+    ]
 }
