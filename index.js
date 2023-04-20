@@ -3,6 +3,7 @@ var jsontext = require('./text.json')
 var initialButtons = require('./buttons/keyboardButtons.json')
 var mentorshipButtons = require('./buttons/mentorshipKeyboardButtons.json')
 var propFirmButtons = require('./buttons/propFirmKeyboardButtons.json')
+var freeButtons = require('./buttons/freeKeyboardButtons.json')
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
@@ -21,19 +22,25 @@ const init = async () => {
 }
 
 app.post(URI, async (req, res) => {
-    if(req.body.message === undefined){
+    if (req.body.message === undefined) {
         return
     }
-    
+
     const chatId = req.body.message.chat.id;
     var text = null;
     if (req.body.message.text == '/start') {
         text = jsontext.welcomeText
         await axios.post(`${TELEGRAM_API}/sendMessage`, { chat_id: chatId, text: text, reply_markup: initialButtons });
     }
-    if (req.body.message.text == 'Mentorship') {
+    if (req.body.message.text == 'Mentorship (Paid)') {
         text = jsontext.mentorshipText
         await axios.post(`${TELEGRAM_API}/sendMessage`, { chat_id: chatId, text: text, reply_markup: mentorshipButtons });
+    }
+    if (req.body.message.text == 'Mentorship (Free Access)') {
+        text = jsontext.freeAccessText
+        await axios.post(`${TELEGRAM_API}/sendMessage`, {
+            chat_id: chatId, text: text, reply_markup: freeButtons
+        });
     }
     if (req.body.message.text == 'Prop Firm Passing') {
         text = jsontext.propFirmText
